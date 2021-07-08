@@ -2,8 +2,14 @@
     "name": "ep's scientific things extension",
     "description": "currently only adds Bib direct download link in Google Scholar",
     "version": "1.0",
+    "host_permissions": [
+        "https://.googleusercontent.com/",
+        "https://scholar.google.ru"
+    ],
     "permissions": [
-        "activeTab"
+        "activeTab",
+        "*://scholar.google.ru/",
+        "*://scholar.googleusercontent.com/*"
     ],
     "content_scripts": [
         {

@@ -12,7 +12,7 @@ for(var ej of elts){
 
     var ta = document.createElement('a');
     ta.onclick = function(urli, ei){return function(){
-        fetch(urli,{mode:"same-origin"}).then((r)=>r.text()).then((data)=>{
+        fetch(urli).then((r)=>r.text()).then((data)=>{
             console.log(data);
             var temp = document.createElement('div');
             temp.innerHTML = data;
